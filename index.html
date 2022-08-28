@@ -1,0 +1,252 @@
+<div class="contentwrap">
+    <title>Energie-Rechner</title>
+    <div class="battery-calculator-container" id="battery-calculator-container">
+        <div class="calculation-block" id="strom-berechnen">
+            <h3>Strom berechnen</h3>
+            <p><b>Spannung (Volt) und Leistung/Energie (Watt) sind mir bekannt.</b> <b style="color: #FF2D21">Ich möchte
+                    den Strom (Ampere) berechnen.</b></p>
+            <div class="calculation-line first">
+                <div class="calculation-que">
+                    <label class="left-lab">Spannung: <b style="color: #FF2D21;">*</b></label>
+                    <input pattern="[0-9]*" type="number" id="current-voltage">
+                    <label class="small">Volt</label>
+                </div>
+                <span class="abstand"></span>
+                <div class="calculation-que-two">
+                    <label class="left-lab">Leistung/Energie: <b style="color: #FF2D21;">*</b></label>
+                    <input pattern="[0-9]*" type="number" id="power-output">
+                    <label class="small">Watt</label>
+                </div>
+            </div>
+
+            </br></br>
+
+            <div class="nofloat"></div>
+            <div class="calculation-line two">
+                <label class="left-lab">Strom beträgt:</label>
+                <input pattern="[0-9]*" type="number" id="electricity-complete" disabled="disabled" class="resultat">
+                <label class="small">Ampere</label>
+            </div>
+            </br>
+            <div class="nofloat"></div>
+
+            <div class="calculation-line last">
+                <button id="electricity-calculation" class="btn is--primary button--checkout">Berechnen</button>
+                <span class="abstand"></span>
+            </div>
+            <div class="nofloat"></div>
+        </div>
+
+        <div class="calculation-block" id="leistung-berechnen">
+            <h3>Leistung berechnen</h3>
+            <p><b>Spannung (Volt) und Strom (Ampere) sind mir bekannt.</b>
+                <b style="color: #FF2D21">Ich möchte die Leistung/Energie (Watt) berechnen.</b>
+            </p>
+            <div class="calculation-line first">
+                <div class="calculation-que">
+                    <label class="left-lab">Spannung: <b style="color: #FF2D21;">*</b></label>
+                    <input pattern="[0-9]*" type="number" id="power-voltage">
+                    <label class="small">Volt</label>
+                </div>
+                <span class="abstand"></span>
+                <div class="calculation-que-two">
+                    <label class="left-lab">Strom: <b style="color: #FF2D21;">*</b></label>
+                    <input pattern="[0-9]*" type="number" id="power-current">
+                    <label class="small">Ampere</label>
+                </div>
+            </div>
+
+            </br></br>
+            <div class="nofloat"></div>
+            <div class="calculation-line two">
+                <label class="left-lab">Leistung beträgt:</label>
+                <input pattern="[0-9]*" type="number" id="performance-complete" disabled="disabled" class="resultat">
+                <label class="small">Watt</label>
+            </div>
+
+            <div class="nofloat"></div>
+            </br>
+            <div class="calculation-line last">
+                <button id="calculate-performance" class="btn is--primary button--checkout">Berechnen</button>
+                <span class="abstand"></span></div>
+            <div class="nofloat"></div>
+        </div>
+
+        <div class="calculation-block" id="voltage-calculate">
+            <h3>Spannung berechnen</h3>
+            <p><b>Strom (Ampere) und Leistung/Energie (Watt) sind mir bekannt.</b>
+                <b style="color: #FF2D21">Ich möchte
+                    die Spannung (Volt) berechnen.</b>
+            </p>
+
+            <div class="calculation-line first">
+                <div class="calculation-que">
+                    <label class="left-lab">Strom: <b style="color: #FF2D21;">*</b></label>
+                    <input pattern="[0-9]*" type="number" id="voltage-current">
+                    <label class="small">Ampere</label>
+                </div>
+
+                <span class="abstand"></span>
+
+                <div class="calculation-que-two">
+                    <label class="left-lab">Leistung/Energie: <b style="color: #FF2D21;">*</b></label>
+                    <input pattern="[0-9]*" type="number" id="voltage-power">
+                    <label class="small">Watt</label>
+                </div>
+            </div>
+
+            </br></br>
+            <div class="nofloat"></div>
+
+            <div class="calculation-line two">
+                <label class="left-lab">Spannung beträgt:</label>
+                <input pattern="[0-9]*" type="number" id="voltage-complete" disabled="disabled" class="resultat">
+                <label class="small">Volt</label>
+            </div>
+            </br>
+            <div class="nofloat"></div>
+            <div class="calculation-line last">
+                <button id="voltage-calculation" class="btn is--primary button--checkout">Berechnen</button>
+                <span class="abstand"></span>
+            </div>
+            <div class="nofloat"></div>
+        </div>
+
+        <div class="calculation-block" id="akkuleistung">
+            <h3>Akkuleistung berechnen</h3>
+
+            <div class="calculation-line first">
+                <div class="calculation-que">
+                    <label class="left-lab">Akku Restenergie: <b style="color: #FF2D21;">*</b></label>
+                    <input pattern="[0-9]*" type="number" id="battery-residual-energy">
+                    <label class="small">%</label>
+                </div>
+
+                <span class="abstand"></span>
+
+                <div class="calculation-que-two">
+                    <label class="left-lab">Spannung: <b style="color: #FF2D21;">*</b></label>
+                    <input pattern="[0-9]*" type="number" id="voltage-battery-power">
+                    <label class="small">Volt</label>
+                </div>
+            </div>
+
+            </br></br>
+            <div class="nofloat"></div>
+
+            <div class="calculation-line one">
+                <div class="calculation-que">
+                    <label class="left-lab">Akku-Kapazität: <b style="color: #FF2D21;">*</b></label>
+                    <input pattern="[0-9]*" type="number" id="capacity-battery-power">
+                    <label class="small">Ah</label>
+                </div>
+
+                <span class="abstand"></span>
+
+                <div class="calculation-que-two">
+                    <label class="left-lab">Leistung/Energie: <b style="color: #FF2D21;">*</b></label>
+                    <input pattern="[0-9]*" type="number" id="power-battery-power">
+                    <label class="small">Watt</label>
+                </div>
+            </div>
+
+            </br></br>
+
+            <div class="nofloat"></div>
+            <div class="calculation-line two">
+                <div class="calc-seperated">
+                    <label class="left-lab">Akku hält:</label>
+                    <input pattern="[0-9]*" type="number" id="battery-performance-complete" disabled="disabled" class="resultat">
+                    <label class="small">Min.</label><span class="abstand"></span>
+                </div>
+
+                <div class="calc-seperated">
+                    <label class="left-lab">oder</label>
+                    <input type="text" id="battery-power-hours" disabled="disabled" class="resultat">
+                    <label class="small">Std.</label>
+                    <span class="abstand"></span>
+                </div>
+
+                <div class="calc-seperated">
+                    <label class="left-lab">und</label>
+                    <span class="abstand"></span>
+                    <input pattern="[0-9]*" type="number" id="battery-power-minutes" disabled="disabled" class="resultat">
+                    <label class="small">Min.</label>
+                </div>
+            </div>
+
+            <div class="nofloat"></div>
+
+            <div class="calculation-line last">
+                <button id="power-performance" class="btn is--primary button--checkout">Berechnen</button>
+                <span class="abstand"></span>
+            </div>
+            <div class="nofloat"></div>
+        </div>
+
+
+        <div class="calculation-block" id="akkuladezeit">
+            <h3>Akkuladezeit berechnen</h3>
+
+            <div class="calculation-line first">
+                <div class="calculation-que">
+                    <label class="left-lab">Akkukapazität: <b style="color: #FF2D21;">*</b></label>
+                    <input pattern="[0-9]*" type="number" id="charging-time-battery-capacity">
+                    <label class="small">Ah</label>
+                </div>
+
+                <span class="abstand"></span>
+
+                <div class="calculation-que-two">
+                    <label class="left-lab">Ladestrom: <b style="color: #FF2D21;">*</b></label>
+                    <input pattern="[0-9]*" type="number" id="battery-charging-current">
+                    <label class="small">Ampere</label>
+                </div>
+            </div>
+
+            </br></br>
+
+            <div class="nofloat"></div>
+            <div class="calculation-line one">
+                <label class="left-lab">Effizienz: <b style="color: #FF2D21;">*</b></label>
+                <input pattern="[0-9]*" type="number" id="battery-charging-efficiency">
+                <label class="small">%</label>
+            </div>
+
+            </br></br>
+
+            <div class="nofloat"></div>
+            <div class="calculation-line two">
+                <div class="calc-seperated">
+                    <label class="left-lab">Ladezeit beträgt:</label>
+                    <input pattern="[0-9]*" type="number" id="full-charge-time" disabled="disabled" class="resultat">
+                    <label class="small">Min.</label>
+                </div>
+                <span class="abstand"></span>
+
+                <div class="calc-seperated">
+                    <label class="left-lab">oder</label>
+                    <input pattern="[0-9]*" type="number" id="full-charge-hours" disabled="disabled" class="resultat">
+                    <label class="small">Std.</label>
+                </div>
+                <span class="abstand"></span>
+
+                <div class="calc-seperated">
+                    <label class="left-lab">und</label>
+                    <span class="abstand"></span>
+                    <input pattern="[0-9]*" type="number" id="full-charge-minutes" disabled="disabled" class="resultat">
+                    <label class="small">Min.</label>
+                </div>
+            </div>
+
+            </br>
+
+            <div class="nofloat"></div>
+            <div class="calculation-line last">
+                <button id="calculate-life" class="btn is--primary button--checkout">Berechnen</button>
+                <span class="abstand"></span>
+            </div>
+            <div class="nofloat"></div>
+        </div>
+    </div>
+</div>
